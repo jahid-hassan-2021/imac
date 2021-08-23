@@ -13,7 +13,7 @@ body {
 }
 
 .left img {
-  width: 80%;
+  width: 90%;
   display: block;
   margin: auto;
 }
@@ -88,6 +88,10 @@ main{
 
 }
 
-
+@media screen and (max-width: 588px){
+  button{
+    margin-top: 5px;
+  }
+}
 
 
