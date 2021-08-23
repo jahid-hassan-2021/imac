@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/Apple_logo_grey.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <title>24-inch Blue iMac with 5K Retina display - Apple</title>
+</head>
+
+<body>
+
+    
+    <h1 class="mainHeading">iMac</h1>
+
+    <main>
+
+        <div class="left">
+            <img src="./img/imac-m1-blue-isolated-16x9-500k.png" alt="">
+            <h3>Price: $1299</h3>
+            <p>The Apple M1 chip is the first system on a chip (SoC) for Mac. Packed with an astonishing 16 billion
+                transistors, it integrates the CPU, GPU, I/O, and every other significant component and controller onto
+                a single tiny chip. Designed by Apple, M1 brings incredible performance, custom technologies, and
+                unparalleled power efficiency to the Mac.</p>
+        </div>
+
+        <div class="right">
+            <h1 class="colourBlue">Customize your Blue 24‑inch iMac with Apple M1 chip.</h1>
+
+            <div class="customize">
+                <h2>Memory</h2>
+                <button onclick="handelCustomization(`memoryCost`, 0)">8GB Unified Memory</button>
+                <button onclick="handelCustomization(`memoryCost`, 200)">16GB Unified Memory</button>
+
+                <h2>Storage</h2>
+                <button onclick="handelCustomization(`storageCost`, 0)">256GB SSD Storage</button>
+                <button onclick="handelCustomization(`storageCost`, 200)">512GB SSD Storage</button>
+                <button onclick="handelCustomization(`storageCost`, 300)">1TB SSD Storage</button>
+
+                <h2>Choose your delivery option</h2>
+                <button onclick="handelCustomization(`deliveryCost`, 0)">1 Weak Free delivery</button>
+                <button onclick="handelCustomization(`deliveryCost`, 20)">Delivery on 24 Hours for $20</button>
+
+            </div>
+
+            <div class="pricing">
+                <table>
+                    <tr>
+                        <td>Base Prise</td>
+                        <td>$1299</td>
+                    </tr>
+                    <tr>
+                        <td>Extra Memory Cost</td>
+                        <td>$ <span id="memoryCost"> 0</span></td>
+                    </tr>
+                    <tr>
+                        <td>Extra Storage Cost</td>
+                        <td>$ <span id="storageCost">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>Delivery Cost</td>
+                        <td>$ <span id="deliveryCost"> 0</span></td>
+                    </tr>
+                    <tr>
+                        <td>Total Prise</td>
+                        <td>$ <span id="totalWithoutPromo"> 1299</span></td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div class="promo_section">
+                <h3>Apply Promo</h3>
+                <input type="text" name="" id="promoInput">
+                <button onclick="handelPromo()">Apply</button>
+                <p id="worning"></p>
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        <hr>
+        <h2 class="colourBlue">Total: $<span id="totalwithpromo">1299</span></h2>
+    </footer>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
